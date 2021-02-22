@@ -5,6 +5,7 @@
             rgba: 1, 1, 1, 1
 
     GridLayout:
+        size_hint_y: 0.25
         rows: 2
 
         GridLayout:
@@ -22,6 +23,7 @@
                     text: "result"
 
                 Button:
+                    size_hint_x: 0.3
                     text: "Del"
                     on_release: root.rm_char()
 
@@ -78,8 +80,8 @@
             text: "+"
             on_release: root.add_char("+")
         Button:
-            text: "(-)"
-            on_release: root.add_char("(-")
+            text: "ans"
+            on_release: root.add_char("ans")
         Button:
             text: "0"
             on_release: root.add_char("0")
